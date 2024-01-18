@@ -25,15 +25,15 @@
 </head>
 <body>
   <div id="gif-container">
-    <img id="boot-gif" src="BootScreen.gif" alt="BootScreen" />
+    <img id="boot-gif" src="Assests/Photos/BootScreen.gif" alt="BootScreen" />
   </div>
 
-  <audio id="booting-sound" src="BootingSound.mp3" preload></audio>
+  <audio id="booting-sound" src="Assests/Audio/BootingSound.mp3" preload></audio>
 
   <script>
     function playSound() {
       var sound = document.getElementById('booting-sound');
-      sound.volume = 0.5; // Adjust the volume here between 0 and 1
+      sound.volume = 0.2;
       sound.play();
     }
 
@@ -41,7 +41,7 @@
       var gifContainer = document.getElementById('gif-container');
       gifContainer.style.display = 'none';
       playSound();
-    }, 5000); // Adjust the delay here (milliseconds)
+    }, 2500);
   </script>
 </body>
 </html>
