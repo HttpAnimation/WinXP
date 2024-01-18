@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play Sound</title>
+  <link rel="stylesheet" type="text/css" href="thing.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    #gif-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #008080;
+    }
+    
+    #boot-gif {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="gif-container">
+    <img id="boot-gif" src="BootScreen.gif" alt="BootScreen" />
+  </div>
+
+  <audio id="booting-sound" src="BootingSound.mp3" preload></audio>
+
+  <script>
+    function playSound() {
+      var sound = document.getElementById('booting-sound');
+      sound.volume = 0.5; // Adjust the volume here between 0 and 1
+      sound.play();
+    }
+
+    setTimeout(function(){
+      var gifContainer = document.getElementById('gif-container');
+      gifContainer.style.display = 'none';
+      playSound();
+    }, 5000); // Adjust the delay here (milliseconds)
+  </script>
+</body>
+</html>-

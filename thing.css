@@ -1,0 +1,28 @@
+button {
+    display: inline-block;
+    height: 134px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+}
+
+h2 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+  }
+
+#close-image img {
+    display: block;
+    height: 130px;  
+    width: 100px;
+}
+
+#close-CSS {
+    background-image: url('https://64.media.tumblr.com/41a1bd9c061b4794ac5ff5621ff9bba1/532a355f1936d0d2-96/s540x810/c48f9c8d76635b87a318a741ba4fe3ef0ca8112e.png' );
+    background-size: 100px 130px;
+    height: 134px;  
+    width: 104px;
+
+}
